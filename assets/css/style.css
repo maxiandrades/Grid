@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    grid-area: header;
+    background-color: #25527b;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #e7e7e7;
+}
+
+.main {
+    grid-area: main;
+    background: #e7e7e7;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "menu main main main"
+        "footer footer footer footer";
+    gap: 0px;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-areas:
+        "f1 f2 f3"
+        "f4 . . ";
+    gap: 20px;
+    padding: 10px;
+}
+
+.foto1 {
+    grid-area: f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.foto2 {
+    grid-area: f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.foto3 {
+    grid-area: f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.foto4 {
+    grid-area: f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.boton {
+    padding: 5px;
+    background-color: #25527b;
+}
+
+.texto {
+    text-align: center;
+    margin:0;
+    color: #25527b;
+}
+
+.precio {
+    text-align: center;
+    margin:0;
+    color: #25527b;
+}
+
+.imagen {
+    margin: 0 auto;
+}
